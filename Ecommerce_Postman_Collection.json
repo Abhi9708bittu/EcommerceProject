@@ -1,0 +1,336 @@
+{
+  "info": {
+    "name": "Ecommerce Quick Setup",
+    "_postman_id": "ecommerce-setup-collection",
+    "description": "Register a user, add 10 products, add to cart, and view cart in the Ecommerce backend.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register User",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"testuser\",\n  \"password\": \"testpass\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/auth/register",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "auth", "register"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 1",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Product 1\",\n  \"description\": \"Description 1\",\n  \"price\": 10.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 2",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Product 2\",\n  \"description\": \"Description 2\",\n  \"price\": 20.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 3",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Product 3\",\n  \"description\": \"Description 3\",\n  \"price\": 30.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 4",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Product 4\",\n  \"description\": \"Description 4\",\n  \"price\": 40.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 5",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Product 5\",\n  \"description\": \"Description 5\",\n  \"price\": 50.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 6",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Product 6\",\n  \"description\": \"Description 6\",\n  \"price\": 60.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 7",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Product 7\",\n  \"description\": \"Description 7\",\n  \"price\": 70.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 8",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Product 8\",\n  \"description\": \"Description 8\",\n  \"price\": 80.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 9",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Product 9\",\n  \"description\": \"Description 9\",\n  \"price\": 90.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 10",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Product 10\",\n  \"description\": \"Description 10\",\n  \"price\": 100.0\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Add Product 1 to Cart",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productId\": 1,\n  \"quantity\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/cart/add",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "cart", "add"]
+        }
+      }
+    },
+    {
+      "name": "View Cart",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/cart",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "cart"]
+        }
+      }
+    },
+    {
+      "name": "Remove Product 1 from Cart",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/cart/remove",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "cart", "remove"]
+        }
+      }
+    },
+    {
+      "name": "Update Product 1 Quantity in Cart",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"productId\": 1,\n  \"quantity\": 5\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/cart/update",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "cart", "update"]
+        }
+      }
+    },
+    {
+      "name": "Checkout (Order with Payment)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/orders/checkout?username=testuser&paymentMethod=UPI",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "orders", "checkout"],
+          "query": [
+            { "key": "username", "value": "testuser" },
+            { "key": "paymentMethod", "value": "UPI" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Order Summary (orderId=1)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/orders/summary/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "orders", "summary", "1"]
+        }
+      }
+    }
+  ]
+} 

@@ -21,7 +21,7 @@ class CartControllerTest {
     }
 
     @Test
-    void testAddAndViewCart() {
+    void test_add_and_view_cart() {
         CartItem item = new CartItem(1L, 2);
         cartController.addToCart(item, session);
         List<CartItem> cart = cartController.getCart(session);
@@ -31,7 +31,7 @@ class CartControllerTest {
     }
 
     @Test
-    void testUpdateCartItem() {
+    void test_update_cart_item() {
         CartItem item = new CartItem(1L, 2);
         cartController.addToCart(item, session);
         CartItem updated = new CartItem(1L, 5);
@@ -42,7 +42,7 @@ class CartControllerTest {
     }
 
     @Test
-    void testRemoveFromCart() {
+    void test_remove_from_cart() {
         CartItem item = new CartItem(1L, 2);
         cartController.addToCart(item, session);
         String result = cartController.removeFromCart(item, session);
@@ -52,7 +52,7 @@ class CartControllerTest {
     }
 
     @Test
-    void testClearCart() {
+    void test_clear_cart() {
         cartController.addToCart(new CartItem(1L, 2), session);
         cartController.addToCart(new CartItem(2L, 3), session);
         String result = cartController.clearCart(session);

@@ -36,12 +36,13 @@ A simple Ecommerce backend application built with Spring Boot. It provides RESTf
 ### Cart
 - `GET /api/cart` — View current cart
 - `POST /api/cart/add` — Add an item to the cart
+- `POST /api/cart/update` — Update quantity of an item in the cart
+- `POST /api/cart/remove` — Remove an item from the cart
 - `POST /api/cart/clear` — Clear the cart
-- `POST /api/cart/checkout` — Checkout with payment method
-- `GET /api/cart/summary` — View order summary
 
 ### Orders
 - `POST /api/orders/checkout` — Place an order (checkout)
+- `GET /api/orders/summary/{orderId}` — Get order summary by order ID
 
 ## Getting Started
 
@@ -83,10 +84,13 @@ To quickly test the API and populate sample data, use the provided Postman colle
 2. **Run the Requests**
    - The collection includes requests to:
      - Register a user
-     - Add 10 products
+     - Login
+     - Add 15 products
      - Add a product to the cart
      - View the cart
-     - Checkout with payment method
+     - Update or remove items in the cart
+     - Clear the cart
+     - Place an order (checkout)
      - View order summary
    - Click each request and hit `Send` to execute.
 
